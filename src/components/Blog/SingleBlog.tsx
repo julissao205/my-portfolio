@@ -1,7 +1,12 @@
-import { imageBuilder } from "@/sanity/sanity-utils";
-import { Blog } from "@/types/blog";
-import Image from "next/image";
-import Link from "next/link";
+import { Blog } from '@/types/blog';
+import Image from 'next/image';
+import Link from 'next/link';
+
+const getImageSrc = (image: any) => {
+  if (!image) return '/images/blog/blog-01.png';
+  if (typeof image === 'string') return image;
+  return image?.asset?.url || '/images/blog/blog-01.png';
+};
 
 const SingleBlog = ({ blog }: { blog: Blog }) => {
   const { title, mainImage, slug, metadata, author, tags, publishedAt } = blog;
@@ -10,7 +15,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
     <div className='wow fadeInUp group relative isolate'>
       <div className='relative mb-6 h-[222px] w-full overflow-hidden rounded-xl'>
         <Image
-          src={imageBuilder(mainImage).url()}
+          src={getImageSrc(mainImage)}
           alt={title}
           fill
           className='w-full scale-100 duration-500 ease-linear group-hover:scale-125'

@@ -1,73 +1,58 @@
 const integrations = {
-  isSanityEnabled: true,
   isStripeEnabled: true,
   isOpenAIEnabled: true,
   isMailchimpEnabled: true,
-  isAuthEnabled: true,
+  isAuthEnabled: false,
 };
 
 const messages = {
-  sanity: (
-    <div style={{ whiteSpace: "pre-wrap" }}>
-      Sanity is not enabled. Follow the{" "}
-      <a
-        href="https://nextjstemplates.com/docs/enableintegration"
-        className="text-primary underline"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        documentation
-      </a>{" "}
-      to enable it.
-    </div>
-  ),
   stripe: (
-    <div style={{ whiteSpace: "pre-wrap" }}>
-      Stripe is not enabled. Follow the{" "}
+    <div style={{ whiteSpace: 'pre-wrap' }}>
+      Stripe is not enabled. Follow the{' '}
       <a
-        href="https://nextjstemplates.com/docs/enableintegration"
-        className="text-primary underline"
-        target="_blank"
-        rel="noopener noreferrer"
+        href='https://nextjstemplates.com/docs/enableintegration'
+        className='text-primary underline'
+        target='_blank'
+        rel='noopener noreferrer'
       >
         documentation
-      </a>{" "}
+      </a>{' '}
       to enable it.
     </div>
   ),
   opanAi: (
-    <div style={{ whiteSpace: "pre-wrap" }}>
-      OpenAI is not enabled. Follow the{" "}
+    <div style={{ whiteSpace: 'pre-wrap' }}>
+      OpenAI is not enabled. Follow the{' '}
       <a
-        href="https://nextjstemplates.com/docs/enableintegration"
-        className="text-primary underline"
+        href='https://nextjstemplates.com/docs/enableintegration'
+        className='text-primary underline'
       >
         documentation
-      </a>{" "}
+      </a>{' '}
       to enable it.
     </div>
   ),
   mailchimp: (
-    <div style={{ whiteSpace: "pre-wrap" }}>
-      Mailchimp is not enabled. Follow the {""}
+    <div style={{ whiteSpace: 'pre-wrap' }}>
+      Mailchimp is not enabled. Follow the {''}
       <a
-        href="https://nextjstemplates.com/docs/enableintegration"
-        className="text-primary underline"
+        href='https://nextjstemplates.com/docs/enableintegration'
+        className='text-primary underline'
       >
         documentation
-      </a>{" "}
+      </a>{' '}
       to enable it.
     </div>
   ),
   auth: (
-    <div style={{ whiteSpace: "pre-wrap" }}>
-      Auth is not enabled. Follow the{" "}
+    <div style={{ whiteSpace: 'pre-wrap' }}>
+      Auth is not enabled. Follow the{' '}
       <a
-        href="https://nextjstemplates.com/docs/enableintegration"
-        className="text-primary underline"
+        href='https://nextjstemplates.com/docs/enableintegration'
+        className='text-primary underline'
       >
         documentation
-      </a>{" "}
+      </a>{' '}
       to enable it.
     </div>
   ),

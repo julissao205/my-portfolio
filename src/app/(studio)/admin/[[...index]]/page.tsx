@@ -1,9 +1,5 @@
-"use client";
-
-import { NextStudio } from "next-sanity/studio";
-import config from "../../../../../sanity.config";
+'use client';
 
 export default function AdminPage() {
-  return <NextStudio config={config} />;
-  // return <>this sanity studio page</>;
+  return <div className='p-6'>Admin studio is disabled.</div>;
 }

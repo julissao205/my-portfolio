@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={plusJakarta.className}>
-      <body>
+      <body className='book-world'>
         <div className='isolate'>
           <NextTopLoader
             color='#e88b68'
@@ -34,10 +34,16 @@ export default function RootLayout({
           />
 
           <AuthProvider>
-            <Header />
-            {children}
-            <Footer />
-            <OpeningGate />
+            <OpeningGate>
+              <div className='site-book-shell'>
+                <div className='site-book-spine' aria-hidden='true' />
+                <div className='site-book-inner'>
+                  <Header />
+                  <div className='site-book-content'>{children}</div>
+                  <Footer />
+                </div>
+              </div>
+            </OpeningGate>
 
             <ToasterContext />
           </AuthProvider>

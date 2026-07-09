@@ -27,16 +27,16 @@ const Header = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 z-1000 w-full ${
+        className={`sticky top-0 left-0 z-1000 w-full ${
           stickyMenu
-            ? 'before:features-row-border bg-dark/70 py-4! shadow-sm backdrop-blur-lg transition duration-100 before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full lg:py-0!'
-            : 'py-7 lg:py-0'
+            ? 'before:features-row-border bg-[#3d2a1fd6] py-4! shadow-[0_10px_28px_rgba(0,0,0,0.28)] backdrop-blur-lg transition duration-100 before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full lg:py-0!'
+            : 'bg-[linear-gradient(180deg,rgba(39,25,18,0.58)_0%,rgba(39,25,18,0)_100%)] py-7 lg:py-0'
         }`}
       >
         <div className='relative mx-auto max-w-[1170px] items-center justify-between px-4 sm:px-8 lg:flex xl:px-0'>
           <div className='flex w-full items-center justify-between lg:w-1/4'>
             <Link href='/'>
-              <span className='inline-block text-lg font-semibold tracking-wide text-white'>
+              <span className='inline-block text-lg font-semibold tracking-wide text-[#f4dec3]'>
                 Julissa Orsborn
               </span>
             </Link>
@@ -48,29 +48,29 @@ const Header = () => {
               <span className='relative block h-5.5 w-5.5 cursor-pointer'>
                 <span className='du-block absolute right-0 h-full w-full'>
                   <span
-                    className={`relative top-0 left-0 my-1 block h-0.5 rounded-sm bg-white delay-0 duration-200 ease-in-out ${
+                    className={`relative top-0 left-0 my-1 block h-0.5 rounded-sm bg-[#f4dec3] delay-0 duration-200 ease-in-out ${
                       !navigationOpen ? 'w-full! delay-300' : 'w-0'
                     }`}
                   ></span>
                   <span
-                    className={`relative top-0 left-0 my-1 block h-0.5 rounded-sm bg-white delay-150 duration-200 ease-in-out ${
+                    className={`relative top-0 left-0 my-1 block h-0.5 rounded-sm bg-[#f4dec3] delay-150 duration-200 ease-in-out ${
                       !navigationOpen ? 'w-full! delay-400' : 'w-0'
                     }`}
                   ></span>
                   <span
-                    className={`relative top-0 left-0 my-1 block h-0.5 rounded-sm bg-white delay-200 duration-200 ease-in-out ${
+                    className={`relative top-0 left-0 my-1 block h-0.5 rounded-sm bg-[#f4dec3] delay-200 duration-200 ease-in-out ${
                       !navigationOpen ? 'w-full! delay-500' : 'w-0'
                     }`}
                   ></span>
                 </span>
                 <span className='du-block absolute right-0 h-full w-full rotate-45'>
                   <span
-                    className={`absolute top-0 left-2.5 block h-full w-0.5 rounded-sm bg-white delay-300 duration-200 ease-in-out ${
+                    className={`absolute top-0 left-2.5 block h-full w-0.5 rounded-sm bg-[#f4dec3] delay-300 duration-200 ease-in-out ${
                       !navigationOpen ? 'h-0! delay-0' : 'h-full'
                     }`}
                   ></span>
                   <span
-                    className={`absolute top-2.5 left-0 block h-0.5 w-full rounded-sm bg-white delay-400 duration-200 ease-in-out ${
+                    className={`absolute top-2.5 left-0 block h-0.5 w-full rounded-sm bg-[#f4dec3] delay-400 duration-200 ease-in-out ${
                       !navigationOpen ? 'h-0! delay-200' : 'h-0.5'
                     }`}
                   ></span>
@@ -82,7 +82,7 @@ const Header = () => {
           <div
             className={`invisible h-0 w-full items-center justify-between lg:visible lg:flex lg:h-auto lg:w-3/4 ${
               navigationOpen
-                ? 'bg-dark visible! relative mt-4 h-auto! max-h-[400px] overflow-y-scroll rounded-md p-7.5 shadow-lg'
+                ? 'visible! relative mt-4 h-auto! max-h-[400px] overflow-y-scroll rounded-md border border-[#b89169]/35 bg-[#3a261bcf] p-7.5 shadow-lg'
                 : ''
             }`}
           >
@@ -102,10 +102,10 @@ const Header = () => {
                     ) : (
                       <Link
                         href={`${menuItem.path}`}
-                        className={`hover:nav-gradient relative border border-transparent px-4 py-1.5 text-sm hover:text-white ${
+                        className={`hover:nav-gradient relative border border-transparent px-4 py-1.5 text-sm hover:text-[#fff5e7] ${
                           pathUrl === menuItem.path
-                            ? 'nav-gradient text-white'
-                            : 'text-white/80'
+                            ? 'nav-gradient text-[#fff5e7]'
+                            : 'text-[#f0d9be]/90'
                         }`}
                       >
                         {menuItem.title}
@@ -119,7 +119,7 @@ const Header = () => {
             <div className='mt-7 flex items-center gap-6 lg:mt-0'>
               <Link
                 href='/contact'
-                className='relative flex items-center gap-1.5 rounded-lg bg-[#e88b68] px-4.5 py-2 text-sm font-semibold text-[#5a3027] hover:bg-[#c08b79]'
+                className='relative flex items-center gap-1.5 rounded-lg border border-[#d0a97c] bg-[linear-gradient(180deg,#f0cd9d_0%,#d9ac7a_100%)] px-4.5 py-2 text-sm font-semibold text-[#4b2f1f] shadow-[0_8px_18px_rgba(17,10,7,0.25)] hover:brightness-105'
               >
                 Hire Me
                 <svg

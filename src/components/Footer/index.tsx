@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <>
-      <footer className='relative z-10 pb-17.5 lg:pb-22.5 xl:pb-27.5'>
+      <footer className='relative z-10 pb-17.5 text-[#e8cfb2] lg:pb-22.5 xl:pb-27.5'>
         {/* <!-- bg shapes --> */}
         <div className='absolute bottom-0 left-0 -z-1 flex w-full flex-col gap-3 opacity-50'>
           <div className='footer-bg-gradient h-[1.24px] w-full'></div>
@@ -23,7 +23,7 @@ const Footer = () => {
           <div className='flex flex-wrap justify-between'>
             <div className='mb-10 w-full max-w-[520px]'>
               <Link href='/' className='mb-8.5 inline-block'>
-                <span className='text-xl font-semibold tracking-wide text-white'>
+                <span className='text-xl font-semibold tracking-wide text-[#f4dec3]'>
                   Julissa Orsborn
                 </span>
               </Link>
@@ -38,7 +38,7 @@ const Footer = () => {
                 <a
                   href='mailto:julissaorsborn@gmail.com'
                   aria-label='facebook'
-                  className='duration-300 ease-in hover:text-white'
+                  className='text-[#dfbf98] duration-300 ease-in hover:text-[#fff3e3]'
                 >
                   <svg
                     className='fill-current'
@@ -58,7 +58,7 @@ const Footer = () => {
                 <a
                   href='https://www.linkedin.com'
                   aria-label='twitter'
-                  className='duration-300 ease-in hover:text-white'
+                  className='text-[#dfbf98] duration-300 ease-in hover:text-[#fff3e3]'
                 >
                   <svg
                     className='fill-current'
@@ -78,7 +78,7 @@ const Footer = () => {
                 <a
                   href='https://github.com'
                   aria-label='github'
-                  className='duration-300 ease-in hover:text-white'
+                  className='text-[#dfbf98] duration-300 ease-in hover:text-[#fff3e3]'
                 >
                   <svg
                     className='fill-current'

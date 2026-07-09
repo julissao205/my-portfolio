@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 
 export default function ExperiencePage() {
   return (
-    <main className='relative overflow-hidden bg-[#0b101a] text-white'>
+    <main className='relative overflow-hidden bg-[#89706f] text-white'>
       <div className='pointer-events-none absolute inset-0'>
-        <div className='absolute top-[-120px] right-[-100px] h-[340px] w-[340px] rounded-full bg-[#14b8a633] blur-[100px]' />
-        <div className='absolute bottom-[-160px] left-[-100px] h-[400px] w-[400px] rounded-full bg-[#f9731633] blur-[120px]' />
+        <div className='absolute top-[-120px] right-[-100px] h-[340px] w-[340px] rounded-full bg-[#e88b6840] blur-[100px]' />
+        <div className='absolute bottom-[-160px] left-[-100px] h-[400px] w-[400px] rounded-full bg-[#d28b7138] blur-[120px]' />
       </div>
 
       <section className='relative mx-auto max-w-[1170px] px-4 pt-36 pb-24 sm:px-8 xl:px-0'>
@@ -18,35 +18,35 @@ export default function ExperiencePage() {
           Professional Background
         </h1>
 
-        <div className='rounded-3xl border border-[#1e293b] bg-[#11182799] p-6 backdrop-blur sm:p-8'>
+        <div className='rounded-3xl border border-[#c08b7985] bg-[#9f858099] p-6 backdrop-blur sm:p-8'>
           <div className='mb-6 flex flex-wrap items-center justify-between gap-4'>
             <div>
               <h2 className='text-xl font-semibold text-white'>
                 25U Signal Support Systems Specialist
               </h2>
-              <p className='text-sm text-[#94a3b8]'>
+              <p className='text-sm text-[#f2e8e5]'>
                 US Army | 07/2023 - 04/2026
               </p>
             </div>
-            <span className='rounded-full border border-[#f97316aa] bg-[#f973161a] px-4 py-1 text-xs font-semibold tracking-wide text-[#fdba74]'>
+            <span className='rounded-full border border-[#e88b68aa] bg-[#e88b6826] px-4 py-1 text-xs font-semibold tracking-wide text-[#fff3ef]'>
               Systems + Troubleshooting
             </span>
           </div>
 
-          <ul className='grid gap-4 text-sm leading-relaxed text-[#cbd5e1] sm:grid-cols-2'>
-            <li className='rounded-xl border border-[#1f2937] bg-[#0f172a] p-4'>
+          <ul className='grid gap-4 text-sm leading-relaxed text-[#f2e8e5] sm:grid-cols-2'>
+            <li className='rounded-xl border border-[#c08b7985] bg-[#89706fcc] p-4'>
               Maintained and repaired communication systems to keep
               mission-critical technology operational.
             </li>
-            <li className='rounded-xl border border-[#1f2937] bg-[#0f172a] p-4'>
+            <li className='rounded-xl border border-[#c08b7985] bg-[#89706fcc] p-4'>
               Operated secure communication equipment, strengthening procedural
               and technical discipline.
             </li>
-            <li className='rounded-xl border border-[#1f2937] bg-[#0f172a] p-4'>
+            <li className='rounded-xl border border-[#c08b7985] bg-[#89706fcc] p-4'>
               Diagnosed and resolved equipment issues during training exercises
               with tight time constraints.
             </li>
-            <li className='rounded-xl border border-[#1f2937] bg-[#0f172a] p-4'>
+            <li className='rounded-xl border border-[#c08b7985] bg-[#89706fcc] p-4'>
               Documented maintenance tasks and system status updates for
               cross-team alignment.
             </li>

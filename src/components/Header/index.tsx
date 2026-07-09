@@ -119,7 +119,7 @@ const Header = () => {
             <div className='mt-7 flex items-center gap-6 lg:mt-0'>
               <Link
                 href='/contact'
-                className='relative flex items-center gap-1.5 rounded-lg bg-[#14b8a6] px-4.5 py-2 text-sm font-semibold text-[#082f2d] hover:bg-[#2dd4bf]'
+                className='relative flex items-center gap-1.5 rounded-lg bg-[#e88b68] px-4.5 py-2 text-sm font-semibold text-[#5a3027] hover:bg-[#c08b79]'
               >
                 Hire Me
                 <svg

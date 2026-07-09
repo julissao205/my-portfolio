@@ -5,6 +5,7 @@ import '@/styles/tailwind.css';
 
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import OpeningGate from '@/components/Common/OpeningGate';
 import ScrollToTop from '@/components/ScrollToTop';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
@@ -26,7 +27,7 @@ export default function RootLayout({
       <body>
         <div className='isolate'>
           <NextTopLoader
-            color='#14b8a6'
+            color='#e88b68'
             crawlSpeed={300}
             showSpinner={false}
             shadow='none'
@@ -36,6 +37,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
+            <OpeningGate />
 
             <ToasterContext />
           </AuthProvider>

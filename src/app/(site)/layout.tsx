@@ -34,16 +34,15 @@ export default function RootLayout({
           />
 
           <AuthProvider>
-            <OpeningGate>
-              <div className='site-book-shell'>
-                <div className='site-book-spine' aria-hidden='true' />
-                <div className='site-book-inner'>
-                  <Header />
-                  <div className='site-book-content'>{children}</div>
-                  <Footer />
-                </div>
+            <div className='site-book-shell'>
+              <div className='site-book-spine' aria-hidden='true' />
+              <div className='site-book-inner'>
+                <Header />
+                <div className='site-book-content'>{children}</div>
+                <Footer />
               </div>
-            </OpeningGate>
+            </div>
+            <OpeningGate />
 
             <ToasterContext />
           </AuthProvider>

@@ -87,7 +87,7 @@ const Header = () => {
             }`}
           >
             <nav>
-              <ul className='flex flex-col gap-5 lg:flex-row lg:items-center lg:gap-2'>
+              <ul className='flex flex-col gap-5 lg:flex-row lg:items-end lg:gap-1'>
                 {menuData.map((menuItem, key) => (
                   <li
                     key={key}
@@ -102,10 +102,10 @@ const Header = () => {
                     ) : (
                       <Link
                         href={`${menuItem.path}`}
-                        className={`hover:nav-gradient relative border border-transparent px-4 py-1.5 text-sm hover:text-[#fff5e7] ${
+                        className={`book-nav-tab relative px-4 py-2 text-sm ${
                           pathUrl === menuItem.path
-                            ? 'nav-gradient text-[#fff5e7]'
-                            : 'text-[#f0d9be]/90'
+                            ? 'book-nav-tab-active'
+                            : 'book-nav-tab-inactive'
                         }`}
                       >
                         {menuItem.title}
@@ -119,7 +119,7 @@ const Header = () => {
             <div className='mt-7 flex items-center gap-6 lg:mt-0'>
               <Link
                 href='/contact'
-                className='relative flex items-center gap-1.5 rounded-lg border border-[#d0a97c] bg-[linear-gradient(180deg,#f0cd9d_0%,#d9ac7a_100%)] px-4.5 py-2 text-sm font-semibold text-[#4b2f1f] shadow-[0_8px_18px_rgba(17,10,7,0.25)] hover:brightness-105'
+                className='relative -top-[5px] flex items-center gap-1.5 rounded-lg border border-[#d0a97c] bg-[linear-gradient(180deg,#f0cd9d_0%,#d9ac7a_100%)] px-4.5 py-2 text-sm font-semibold text-[#4b2f1f] shadow-[0_8px_18px_rgba(17,10,7,0.25)] hover:brightness-105'
               >
                 Hire Me
                 <svg

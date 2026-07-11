@@ -20,7 +20,9 @@ const OpeningGate = () => {
       return;
     }
 
-    const navigationEntries = window.performance.getEntriesByType('navigation');
+    const navigationEntries = window.performance.getEntriesByType(
+      'navigation',
+    ) as PerformanceNavigationTiming[];
     const navigationType = navigationEntries[0]?.type;
 
     if (navigationType === 'reload') {

@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -35,10 +36,19 @@ const Header = () => {
       >
         <div className='relative mx-auto max-w-[1170px] items-center justify-between px-4 sm:px-8 lg:flex xl:px-0'>
           <div className='flex w-full items-center justify-between lg:w-1/4'>
-            <Link href='/'>
-              <span className='inline-block text-lg font-semibold tracking-wide text-[#f4dec3]'>
-                Julissa Orsborn
-              </span>
+            <Link
+              href='/'
+              aria-label='Julissa Orsborn home'
+              className='inline-flex items-center'
+            >
+              <Image
+                src='/images/logo/logo.svg'
+                alt='Julissa Orsborn logo'
+                width={44}
+                height={44}
+                priority
+                className='h-11 w-11 drop-shadow-[0_4px_10px_rgba(0,0,0,0.25)]'
+              />
             </Link>
 
             <button
@@ -86,8 +96,8 @@ const Header = () => {
                 : ''
             }`}
           >
-            <nav>
-              <ul className='flex flex-col gap-5 lg:flex-row lg:items-end lg:gap-1'>
+            <nav className='flex flex-1 justify-end'>
+              <ul className='flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-end lg:gap-2'>
                 {menuData.map((menuItem, key) => (
                   <li
                     key={key}
@@ -102,7 +112,7 @@ const Header = () => {
                     ) : (
                       <Link
                         href={`${menuItem.path}`}
-                        className={`book-nav-tab relative px-4 py-2 text-sm ${
+                        className={`book-nav-tab relative px-5 py-3 text-[15px] lg:px-6 lg:py-3.5 lg:text-base ${
                           pathUrl === menuItem.path
                             ? 'book-nav-tab-active'
                             : 'book-nav-tab-inactive'
@@ -115,28 +125,6 @@ const Header = () => {
                 ))}
               </ul>
             </nav>
-
-            <div className='mt-7 flex items-center gap-6 lg:mt-0'>
-              <Link
-                href='/contact'
-                className='relative -top-[5px] flex items-center gap-1.5 rounded-lg border border-[#d0a97c] bg-[linear-gradient(180deg,#f0cd9d_0%,#d9ac7a_100%)] px-4.5 py-2 text-sm font-semibold text-[#4b2f1f] shadow-[0_8px_18px_rgba(17,10,7,0.25)] hover:brightness-105'
-              >
-                Hire Me
-                <svg
-                  className='mt-0.5'
-                  width='16'
-                  height='16'
-                  viewBox='0 0 16 16'
-                  fill='none'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path
-                    d='M14.4002 7.60002L9.2252 2.35002C9.0002 2.12502 8.6502 2.12502 8.4252 2.35002C8.2002 2.57502 8.2002 2.92502 8.4252 3.15002L12.6252 7.42502H2.0002C1.7002 7.42502 1.4502 7.67502 1.4502 7.97502C1.4502 8.27502 1.7002 8.55003 2.0002 8.55003H12.6752L8.4252 12.875C8.2002 13.1 8.2002 13.45 8.4252 13.675C8.5252 13.775 8.6752 13.825 8.8252 13.825C8.9752 13.825 9.1252 13.775 9.2252 13.65L14.4002 8.40002C14.6252 8.17502 14.6252 7.82503 14.4002 7.60002Z'
-                    fill='white'
-                  />
-                </svg>
-              </Link>
-            </div>
           </div>
         </div>
       </header>

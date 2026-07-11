@@ -20,8 +20,16 @@ const OpeningGate = () => {
       return;
     }
 
-    setIsVisible(true);
-    setIsOpening(false);
+    const navigationEntries = window.performance.getEntriesByType('navigation');
+    const navigationType = navigationEntries[0]?.type;
+
+    if (navigationType === 'reload') {
+      setIsVisible(true);
+      setIsOpening(false);
+    } else {
+      setIsVisible(false);
+      setIsOpening(false);
+    }
   }, [mounted, pathname]);
 
   useEffect(() => {

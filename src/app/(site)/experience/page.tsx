@@ -13,13 +13,13 @@ export default function ExperiencePage() {
         <div className='absolute bottom-[-160px] left-[-100px] h-[400px] w-[400px] rounded-full bg-[#a4774d2e] blur-[120px]' />
       </div>
 
-      <section className='relative mx-auto max-w-[1170px] px-4 pt-36 pb-24 sm:px-8 xl:px-0'>
-        <h1 className='mb-8 text-4xl leading-tight font-semibold tracking-tight text-[#482f20] sm:text-5xl'>
+      <section className='relative mx-auto max-w-[1170px] px-4 pt-[30px] pb-20 sm:px-8 xl:px-0'>
+        <h1 className='mb-6 text-4xl leading-tight font-semibold tracking-tight text-[#482f20] sm:text-5xl'>
           Professional Background
         </h1>
 
-        <div className='rounded-3xl border border-[#8e613f4f] bg-[linear-gradient(145deg,#f6e8d4_0%,#e8d2b6_100%)] p-6 shadow-[0_16px_28px_rgba(64,39,22,0.18)] sm:p-8'>
-          <div className='mb-6 flex flex-wrap items-center justify-between gap-4'>
+        <div className='rounded-3xl border border-[#8e613f4f] bg-[linear-gradient(145deg,#f6e8d4_0%,#e8d2b6_100%)] px-6 pt-5 pb-8 shadow-[0_16px_28px_rgba(64,39,22,0.18)] sm:px-8 sm:pt-6 sm:pb-10'>
+          <div className='mb-5 flex flex-wrap items-center justify-between gap-4'>
             <div>
               <h2 className='text-xl font-semibold text-[#4b3020]'>
                 25U Signal Support Systems Specialist

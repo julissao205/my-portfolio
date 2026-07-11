@@ -25,7 +25,7 @@ export default function SkillsPage() {
         <div className='absolute bottom-[-160px] left-[-100px] h-[400px] w-[400px] rounded-full bg-[#a4774d2e] blur-[120px]' />
       </div>
 
-      <section className='relative mx-auto max-w-[1170px] px-4 pt-36 pb-24 sm:px-8 xl:px-0'>
+      <section className='relative mx-auto max-w-[1170px] px-4 pt-10 pb-24 sm:px-8 xl:px-0'>
         <h1 className='mb-6 text-4xl leading-tight font-semibold tracking-tight text-[#482f20] sm:text-5xl'>
           Skills & Strengths
         </h1>

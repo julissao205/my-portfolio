@@ -14,7 +14,7 @@ export default function ContactPage() {
         <div className='absolute bottom-[-160px] left-[-100px] h-[400px] w-[400px] rounded-full bg-[#a4774d2e] blur-[120px]' />
       </div>
 
-      <section className='relative mx-auto max-w-[900px] px-4 pt-36 pb-24 sm:px-8 xl:px-0'>
+      <section className='relative mx-auto max-w-[900px] px-4 pt-10 pb-24 sm:px-8 xl:px-0'>
         <h1 className='mb-6 text-4xl leading-tight font-semibold tracking-tight text-[#482f20] sm:text-5xl'>
           Let&apos;s Connect
         </h1>
@@ -43,14 +43,16 @@ export default function ContactPage() {
 
           <div className='rounded-3xl border border-[#8e613f4f] bg-[linear-gradient(145deg,#f6e8d4_0%,#e8d2b6_100%)] p-6 shadow-[0_16px_28px_rgba(64,39,22,0.18)]'>
             <p className='mb-2 text-sm font-medium tracking-wide text-[#7f5536]'>
-              Phone
+              Write Me a Message
             </p>
-            <p className='mb-5 text-lg text-[#4b3020]'>785-323-0878</p>
+            <p className='mb-5 text-lg text-[#4b3020]'>
+              Send a quick note and I&apos;ll get back to you as soon as I can.
+            </p>
             <a
-              href='tel:7853230878'
+              href='mailto:julissaorsborn@gmail.com?subject=Message%20from%20your%20portfolio'
               className='inline-flex rounded-xl border border-[#b6885f] bg-[#f7ebda] px-5 py-2.5 text-sm font-semibold text-[#5b3b28] transition hover:border-[#8f6542] hover:bg-[#f1e0c8]'
             >
-              Call Now
+              Write a Message
             </a>
           </div>
         </div>
